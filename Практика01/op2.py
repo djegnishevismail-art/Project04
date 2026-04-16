@@ -31,14 +31,23 @@ class SmartDevice:
 
 device = SmartDevice()
 device.init("Samsung", "011", 50, True)
+device1 = SmartDevice()
+device1.init("Notebook", "F-14", 45, False)
+device2 = SmartDevice()
+device2.init("Tv", "Smart1", 70, True)
+
+
 
 print(device.get_status())
+print(device1.get_status())
+print(device2.get_status())
 
 device.use(50)
 device.charge(0)
 device.turn_off()
 
-print(device.get_status())
+
+
 
 
 
